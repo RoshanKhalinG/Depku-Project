@@ -1,0 +1,304 @@
+
+:root {
+    --font1 : 'Bebas Neue' , cursive
+}
+h1{
+	background-color: #222;
+	/*background-color: rgb(96, 206, 96);*/
+	color: white;
+	padding: 30px;
+	text-align: center;
+	font-family: "comic sans ms"
+}
+
+
+
+marquee{
+    background-color: blueviolet;
+    height: 100%;
+    display: block;
+}
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/*NAVIGATION BAR*/
+.menu-bar{
+	background-color: darkslateblue;
+	text-align: right;
+}
+.menu-bar ul {
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+.menu-bar ul li{
+	padding: 15px;
+	margin: 15px;
+	width: 120;
+}
+.menu-bar ul li a
+{
+	text-decoration: none;
+	color: #fff;
+}
+.active, .menu-bar ul li:hover
+{
+	background: Purple;
+	border-radius: 3px;
+}
+.menu-bar .fa{
+	margin: 5px;
+}
+.sub-menu-1{
+	display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+	display: block;
+	position: absolute;
+	background-color: darkslateblue;
+	margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display: block;
+	margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px; 
+    padding: 10px; 
+	border-bottom: 1px dotted #fff; 
+	background: transparent;
+    text-align: left;
+    border-radius: 0;
+} 
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+	border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+	color:  #22EEB5;
+}
+
+/*ROW-COLUMN*/
+.column-main{
+	width: 57%;
+	float: left;
+	background: gray;
+	height: 400px;
+}
+.column{
+	width: 42%;
+	float: right;
+	height: 400px;
+	box-shadow: 0px 20px 40px #0000000d;
+}
+#chairperson{
+	text-align: center;
+}
+h3{
+	text-align: left;
+	color: cornflowerblue;
+}
+.chair-card {
+    
+    border-radius: 3px;
+    width: 80%;
+    margin: auto;
+   /* text-align: center;
+   padding: 60px 120px;*/
+    background-color: #fff;
+    z-index: 2;
+}
+
+.chair-avatar {
+    display: block;
+    width: 200px;
+    border-radius: 50%;
+    margin: auto;
+}
+.chair-author{
+	color: #e8290b;
+}
+
+/*DONER BAR*/
+.donerbar {
+    text-align:  center;
+    padding: 60px 120px;
+	height: 500px;
+	/*background-color: #fff;*/
+	position: relative;
+	clear: both;
+}   
+
+.doner-list {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4 , 1fr);
+}
+
+.f-doner {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 0.8px solid #22222222;
+}
+
+.doner-info {
+    padding: 20px;
+}
+.section-subtitle{
+	color: #e8290b;
+}
+.section-header{
+	color:blue;
+	text-align: center;
+}
+
+
+
+
+
+/*FOOTER SECTION*/
+footer
+{
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+	background: #111;
+	border-top-right-radius: 50px;
+}
+.main-content
+{
+	display: flex;
+    color: aliceblue;
+}
+
+.main-content .box
+{
+	flex-basis: 50%;
+	padding: 10px 10px;
+	
+}
+.main-content .left{
+	flex-basis: 100%;
+	text-align: justify;
+}
+.box h2{
+	font-size: 1.125rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #22EEB5;
+}
+.main-content .right{
+    flex-basis: 80%;
+}
+.main-content.center{
+	flex-basis: 100%;
+}
+.social {
+	color: #fff;
+}
+.social a {
+	width: 30px;
+	height: 30px;
+	/*border-radius: 50%; will be border circle of 360*/
+	line-height: 10px;
+	font-size: 10px;
+	color: red;
+	margin-right: 15px;
+	cursor: pointer;
+	display: inline-block;
+}
+.social a span{
+	color: #e7f2f4;
+/*	padding: 10px 12x;*/
+	font-size: 20px;
+}
+.main-content li{
+	list-style: none;
+	padding-left: 10%;
+
+}
+.fab{
+	size: 30px;
+} 
+.social a span:hover{
+	color:red;
+}
+
+#contact {
+    margin-top: -200px;
+    padding: 250px 60px 60px 60px;
+    background-color: #222;
+    z-index: 1;  
+}
+
+label{
+    color: #fff;
+    display: block;
+    margin-top: 15px;
+}
+
+input,textarea {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 10px;
+}
+}
+
+
+form {
+    width: 50%;
+    margin: auto;
+    background-color: #222;
+}
+.red-outlined-btn {
+    margin-top: 8px;
+    font-size: 8px;
+	margin-right: 10px;
+    color:#fff;
+    background-color: #e8290b;
+    outline: 1px solid #222;
+    border: none;
+    outline-offset: -5px;
+    padding: 10px;
+    transition: all .2s linear ;
+    cursor: pointer;
+}
+.red-outlined-btn:hover {
+    background-color: #fff;
+    color: #e8290b;
+}
+
+.hr {
+	width: 100%;
+	border: 0;
+	border-radius: 1px solid #fff;
+	margin: 20px auto;
+}
+.copyright{
+	justify-content: space-between;
+    display: flex;
+	padding-left: 15px;
+    padding-right: 15px;
+	color: aqua;
+	align-items: center;
+	list-style: none;
+}
+.heart {
+    color: deeppink;
+}
+.copyright a:hover {
+	color: red;
+}
+.copyright a {
+    list-style: none;
+}

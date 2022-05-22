@@ -1,0 +1,329 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.menu-bar{
+	background-color: rgb(0,100,0);
+	text-align: center;
+}
+.menu-bar ul {
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+.menu-bar ul li{
+	padding: 15px;
+	margin: 15px;
+	width: 120;
+}
+.menu-bar ul li a
+{
+	text-decoration: none;
+	color: #fff;
+}
+.active, .menu-bar ul li:hover
+{
+	background: #2bab0d;
+	border-radius: 3px;
+}
+.navbar .fa{
+	margin: 5px;
+}
+.sub-menu-1{
+	display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+	display: block;
+	position: absolute;
+	background-color: rgb(0,100,0);
+	margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display: block;
+	margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px; 
+    padding: 10px; 
+	border-bottom: 1px dotted #fff; 
+	background: transparent;
+    text-align: left;
+    border-radius: 0;
+} 
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+	border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+	color:  #22EEB5;
+}
+
+
+.donerbar {
+    text-align:  center;
+    padding: 0px ;
+	height: 450px;
+	background-color: #fff;
+	position: relative;
+}   
+
+.doner-list {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4 , 1fr);
+}
+
+.f-doner {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 0.8px solid #22222222;
+}
+
+.doner-info {
+    padding: 20px;
+}
+.section-subtitle{
+	color: #e8290b;
+}
+.section-header{
+	color: aqua;
+	text-align: center;
+}
+
+/*FOOTERRR*/
+#footer
+{
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+	background: #111;
+	color: #fff;
+}
+.main-content
+{
+	display: flex;
+}
+
+.main-content .box
+{
+	flex-basis: 50%;
+	padding: 10px 10px;
+	
+}
+.main-content .left{
+	flex-basis: 100%;
+}
+.box h2{
+	font-size: 1.125rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #22EEB5;
+}
+.main-content .right{
+    flex-basis: 80%;
+}
+.main-content.center{
+	flex-basis: 100%;
+}
+.social a {
+	width: 30px;
+	height: 30px;
+	/*border-radius: 50%; will be border circle of 360*/
+	line-height: 10px;
+	font-size: 10px;
+/*	color: #000;*/
+	margin-right: 15px;
+	cursor: pointer;
+	display: inline-block;
+}
+.social a span{
+	color: #e7f2f4;
+/*	padding: 10px 12x;*/
+	font-size: 20px;
+}
+.main-content li{
+	list-style: none;
+	padding-left: 10%;
+
+}
+.fab{
+	size: 30px;
+} 
+.social a span:hover{
+	color: #2bab0d;
+}
+
+#contact {
+    margin-top: -200px;
+    padding: 250px 60px 60px 60px;
+    background-color: #222;
+    z-index: 1;  
+}
+
+label{
+    color: #fff;
+    display: block;
+    margin-top: 15px;
+}
+
+input,textarea {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 10px;
+}
+}
+
+
+form {
+    width: 50%;
+    margin: auto;
+    background-color: #222;
+}
+.red-outlined-btn {
+    margin-top: 8px;
+    font-size: 8px;
+	margin-right: 10px;
+    color:#fff;
+    background-color: #e8290b;
+    outline: 1px solid #222;
+    border: none;
+    outline-offset: -5px;
+    padding: 10px;
+    transition: all .2s linear ;
+    cursor: pointer;
+}
+.red-outlined-btn:hover {
+    background-color: #fff;
+    color: #e8290b;
+}
+
+.hr {
+	width: 100%;
+	border: 0;
+	border-radius: 1px solid #fff;
+	margin: 20px auto;
+}
+.copyright{
+	justify-content: space-between;
+    display: flex;
+	padding-left: 15px;
+    padding-right: 15px;
+	color: aqua;
+	align-items: center;
+	list-style: none;
+}
+.heart {
+    color: deeppink;
+}
+.copyright a:hover {
+	color: red;
+}
+.copyright a {
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+	body{
+	background-image: url(2.jpg);
+	background-size: cover;
+	
+}
+h1{
+	color: white; text-align: center;
+}
+
+.menu-bar{
+	background-color: darkslateblue;
+	text-align: center;
+}
+.menu-bar ul{
+	display: inline-flex; list-style: none; color: white;
+}
+.menu-bar ul li{
+	width: 120px; margin: 15px; padding: 15px;
+}
+.menu-bar ul li a{
+	text-decoration: none;
+	color: white;
+}
+.active, .menu-bar ul li:hover
+{
+	background-color: purple;
+	border-radius: 3px;
+}
+.menu-bar .fa{
+	margin: 5px;
+}
+.sub-menu1{
+	display: none;
+}
+.menu-bar ul li:hover .sub-menu1 {
+	display: block; position: absolute; background-color: darkslateblue; margin-top: 15px; margin-left: 15px;
+}
+.menu-bar ul li:hover .sub-menu1 ul
+{
+	display: block; margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu1 ul li
+{
+width: 150px; padding: 10px; border-bottom: 1px dotted #fff; background: transparent; text-align: left; border-radius: 0;
+} 
+.menu-bar ul li:hover .sub-menu1 ul li:last-child{
+	border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu1 ul li a:hover{
+	color:  #22EEB5;
+}
+.sub-menu2{
+	display: none;
+}
+.hover-me:hover .sub-menu2{
+	display:block;
+	position: absolute;
+	margin-top: -45px;
+	margin-left: 140px;
+	background-color: darkslateblue;
+
+}
+.sub-menu3{
+	display: block;
+
+}
+.menu-bar ul li:hover .sub-menu3 ul {
+	display: block; position: absolute; background-color: darkslateblue; margin-top: 10px; margin-left: 20px;
+}
